@@ -2,62 +2,48 @@
 
 ## 📝 Introdução
 
-Este documento é um guia passo a passo destinado a ajudar iniciantes a configurar e executar os projetos de integração do WhatsApp com a IA generativa Gemini do Google, disponíveis nas versões v1 e v2. Não é necessária experiência prévia em programação para seguir este guia.
+Este documento serve como um guia detalhado para usuários interessados em configurar e executar os projetos de integração do WhatsApp com a IA generativa Gemini do Google. Estão disponíveis três versões:
+
+- **v1:** Uma implementação inicial que responde automaticamente com "Olá FADERGS!".
+- **v2:** Avança a v1 com a integração da IA generativa Gemini, gerando respostas automáticas baseadas nas mensagens recebidas.
+- **v3:** Aprimora a v2, permitindo a personalização das respostas da IA Gemini através de instruções específicas, oferecendo uma interação mais rica e adaptável.
 
 ## 🛠 Pré-requisitos
 
-Antes de iniciar, certifique-se de ter o seguinte instalado em seu computador:
+Antes de começar, você precisará:
 
-- **Editor de Código:** Recomendamos o [Visual Studio Code (VSCode)](https://code.visualstudio.com/), um editor gratuito e amigável.
-- **Node.js:** Necessário para executar o código JavaScript fora do navegador. Instale a versão recomendada do Node.js disponível em [nodejs.org](https://nodejs.org/).
+- **Visual Studio Code (VSCode):** Um editor de código versátil e gratuito, ideal para este projeto. [Baixe aqui](https://code.visualstudio.com/).
+- **Node.js:** Essencial para rodar o código JavaScript fora do navegador. [Baixe aqui](https://nodejs.org/).
 
 ## 🚀 Primeiros Passos
 
-1. **Baixar o Projeto:** Acesse a página do GitHub do projeto, procure por um botão chamado `Code` (ou `Código`) e então clique em `Download ZIP`. Salve e extraia o arquivo ZIP no local desejado em seu computador.
+1. **Baixar o Projeto:** Acesse a página do GitHub do projeto, clique em `Code` > `Download ZIP`. Salve o arquivo ZIP em uma pasta de sua escolha e extraia os arquivos.
 
-2. **Abrir o Projeto no VSCode:** No VSCode, selecione `File > Open Folder` e escolha a pasta do projeto que você extraiu.
+2. **Abrir o Projeto no VSCode:** Inicie o VSCode, vá em `File > Open Folder` e selecione a pasta do projeto extraída.
 
-## 🔧 Configuração
+## 🔧 Configuração e Execução
 
-Você precisa instalar as dependências de cada projeto (v1 e v2) antes de executá-los. Siga os passos para cada versão abaixo.
+Siga os passos abaixo para cada versão do projeto. Lembre-se de abrir um terminal no VSCode através de `Terminal > New Terminal`.
 
-### Versão 1 (v1)
+### Passos
 
-1. **Abrir Terminal no VSCode:** Utilize `Terminal > New Terminal` no menu superior para abrir um terminal integrado.
-2. **Instalar Dependências:** Navegue até a pasta do projeto v1 e instale as dependências com:
+1. **Instalar Dependências:**
 
-    ```bash
-    cd caminho/para/o/projeto/v1
+    ```cmd
     npm install
     ```
 
-3. **Executar o Projeto:** Após a instalação, execute o projeto com:
+2. **Executar o Projeto:**
+Aqui você pode escolher qual arquivo quer executar (v1,v2 ou v3)
+Substitua o nome abaixo pelo arquivo desejado e execute o comando no terminal
 
-    ```bash
+    ```cmd
     node v1.js
     ```
 
-### Versão 2 (v2)
-
-1. **Instalar Dependências:** Navegue até a pasta do projeto v2 e instale as dependências necessárias como feito anteriormente.
-
-    ```bash
-    cd caminho/para/o/projeto/v2
-    npm install
-    ```
-
-2. **Executar o Projeto:** Com as dependências instaladas, inicie o projeto com:
-
-    ```bash
-    node v2.js
-    ```
 
 ## 🎉 Conclusão
 
-Ao seguir estes passos, seus projetos de integração WhatsApp com Gemini devem estar funcionando e prontos para serem testados. A v2 oferece integração com a IA Generativa Gemini para respostas automatizadas inteligentes.
+Com este guia, vocês poderão facilmente configurar e rodar as diferentes versões dos projetos de integração WhatsApp com Gemini, cada uma oferecendo um nível crescente de interação e personalização.
 
-Caso encontre problemas, certifique-se de que todas as dependências foram corretamente instaladas e que o Node.js está atualizado. Consulte a documentação dos pacotes usados para mais detalhes.
-
----
-
-Esperamos que este guia ajude na execução dos seus projetos! Caso tenha dúvidas ou sugestões, fique à vontade para contribuir. Existe mais alguma funcionalidade ou passo que você acredita ser importante incluir neste guia? 🤔
+Caso encontre problemas, entre em contato comigo ou verifique se todas as dependências foram instaladas corretamente e se o Node.js está atualizado. A documentação específica dos pacotes usados pode oferecer soluções adicionais.
