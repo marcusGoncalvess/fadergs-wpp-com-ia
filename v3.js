@@ -29,11 +29,29 @@ wppconnect
 async function callGemini(message) {
   try {
     const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
-    const result = await model.generateContent(message);
+    const modelConfigured = await model.startChat({
+      history: [
+        {
+          role: 'user',
+          parts: `
+          Você é um atendente da FADERGS 
+          (Faculdade de Desenvolvimento do Rio Grande do Sul)
+          e deve responder dúvidas dos alunos
+          `,
+        },
+        {
+          role: 'model',
+          parts: 'entendido'
+        }
+      ],
+    });
+
+    const result = await modelConfigured.sendMessage(message);
 
     const response = await result.response;
 
     const text = response.text();
+    console.log({ text });
 
     return text;
   } catch (err) {
